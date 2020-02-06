@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tool Rental</string>
+    <string name="rentalDays">Enter days for rental.</string>
+    <string name="radWasher">Power Washer Rental</string>
+    <string name="radTiller">Power Tiller Rental</string>
+    <string name="Title">Tim\'s Tool Rental</string>
+    <string name="btnUpdate">Update</string>
+    <string name="total">total</string>
+</resources>
