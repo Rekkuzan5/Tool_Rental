@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView"
@@ -31,38 +33,44 @@
             android:layout_marginTop="75dp"
             android:layout_marginRight="50dp"
             android:layout_marginBottom="50dp"
+            android:digits="1234567"
             android:ems="10"
             android:gravity="center"
             android:hint="@string/rentalDays"
+            android:importantForAutofill="no"
             android:inputType="number"
+            android:maxLength="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center|center_vertical">
+            android:layout_gravity="center"
+            android:gravity="clip_vertical|center_vertical">
 
             <RadioButton
                 android:id="@+id/radioButton"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:paddingLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:paddingEnd="0dp"
                 android:paddingRight="0dp"
-                android:text="@string/radWasher"
-                android:layout_marginStart="50dp"
-                android:paddingStart="30dp"
-                android:paddingEnd="0dp" />
+                android:text="@string/radWasher" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
+                android:layout_width="168dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:paddingLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:text="@string/radTiller" />
         </RadioGroup>
@@ -76,12 +84,23 @@
             android:text="@string/btnUpdate" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:gravity="center"
+            android:text="@string/totalHeading"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
             android:text="@string/total"
             android:textSize="24sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
